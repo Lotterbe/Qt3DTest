@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui 3dcore 3dextras 3dinput 3drender
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    orbittransformcontroller.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    orbittransformcontroller.hpp
 
 FORMS    += mainwindow.ui

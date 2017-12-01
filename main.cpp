@@ -1,5 +1,6 @@
 
 #include "mainwindow.h"
+#include "orbittransformcontroller.hpp"
 #include <QApplication>
 
 #include <Qt3DCore/QEntity>
@@ -16,6 +17,11 @@
 #include <Qt3DExtras/QCylinderMesh>
 #include <Qt3DExtras/QSphereMesh>
 #include <Qt3DExtras/QTorusMesh>
+
+#include <QPropertyAnimation>
+
+#include <Qt3DExtras/Qt3DWindow>
+#include <Qt3DExtras/QOrbitCameraController>
 
 Qt3DCore::QEntity *createScene()
 {
